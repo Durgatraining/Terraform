@@ -13,9 +13,6 @@ resource "azurerm_virtual_network" "virtualnetwork" {
   ]
   } 
 
-  resource "" "name" {
-    
-  }
   resource "azurerm_subnet" "subnet1" {
   count                               = length(var.subnet_details)
   name                                = var.subnet_details[count.index]
