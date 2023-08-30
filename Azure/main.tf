@@ -9,7 +9,7 @@ resource "azurerm_virtual_network" "VirtualNetwork" {
   location            = "West Europe"
   resource_group_name = "CareerIT_Resource"
   depends_on = [
-     azurerm_resource_group.Career_IT
+     azurerm_resource_group.CareerIT
       ]
 }
 
